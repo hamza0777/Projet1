@@ -23,9 +23,7 @@ public class inscription extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		base b=new base();
 		b.loaddatabase();
-		//
-		
-		request.setAttribute("b", b);
+		   //request.setAttribute("b", b);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/inscription.jsp").forward(request, response);
 		
 	}
